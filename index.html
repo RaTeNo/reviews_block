@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"> 
+  </head>
+
+  <body>
+    <div class="wrap">
+        <div class="container">
+            <div class="header">
+                <div class="header__title">Отзывы</div>
+            </div>    
+            <form  class="form-review">
+                <div class="form-review__names">
+                    <div class="form-review__name">
+                        <label class="label-review" for="">Ваше полное имя:                        
+                        <input class="input-review" type="text" placeholder="Иван Петрович Иванов"></label>
+                    </div>    
+                    <div class="review-link">  
+                        <span class="review-link__text">Аватар (необязательно):</span>  
+                        <div class="block_upload">
+                            <div class="img_avatar" id="output">
+                                <img src="image/icon1.png" alt="">
+                            </div>
+                            <div class="input__wrapper">
+                               <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                               <label for="input__file" class="input__file-button">                               
+                                  <span class="input__file-button-text">Выберите файл</span>
+                               </label>
+                            </div>
+                            <a type="" onclick="remove()" class="remove"></a>
+                        </div>
+                    </div>
+                </div>
+                                    
+                <div class="form-review__reviews">
+                    <label  class="label-review" for="">
+                        <div class="label-review__cont">
+                            <span>Отзыв: </span>
+                            <div class="review-link__text2"><svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.805 12.8758L9.66945 0.68C9.42043 0.254167 8.98323 0 8.49979 0C8.01635 0 7.57915 0.254167 7.33094 0.679167L0.194582 12.8758C-0.0584923 13.3083 -0.0649814 13.8492 0.176737 14.2883C0.417644 14.7275 0.87269 15 1.36424 15H15.6362C16.1269 15 16.5827 14.7275 16.8237 14.2883C17.0654 13.8492 17.0581 13.3083 16.805 12.8758ZM8.90536 12.5H8.09422C7.87035 12.5 7.68865 12.3133 7.68865 12.0833V11.25C7.68865 11.02 7.87035 10.8333 8.09422 10.8333H8.90536C9.12923 10.8333 9.31092 11.02 9.31092 11.25V12.0833C9.31092 12.3133 9.12923 12.5 8.90536 12.5ZM7.68865 8.33333C7.68865 8.79333 8.05204 9.16667 8.49979 9.16667C8.94754 9.16667 9.31092 8.79333 9.31092 8.33333V5.83333C9.31092 5.37333 8.94754 5 8.49979 5C8.05204 5 7.68865 5.37333 7.68865 5.83333V8.33333Z" fill="#FF4343"/>
+                            </svg> Минимальное кол-во символов: 250</div>
+                        </div>
+                        <div class="error"></div>
+                    <textarea class="form-review__area" name="" id="" placeholder="Иван Петрович Иванов"></textarea></label>
+                </div>
+                <div class="form__btn">
+                    <button class="form__button" type="submit">Отправить</button>
+                </div>
+            </form>  
+            <div class="review">
+                <div class="review__wrap">
+                    <div class="review-avatar">
+                        <img src="image/icon1.png" alt="">
+                    </div>
+                    <div class="review-author">
+                        <div class="review-author__name">Иван Петрович</div>
+                        <div class="review-author__date">05.11.2020</div>
+                        <div class="review-author__text">Объемная скидка порождена временем. Ассортиментная политика предприятия, пренебрегая деталями, изоморфна времени. Раскрутка, не меняя концепции, изложенной выше, неестественно стабилизирует тактический рекламный блок.</div>
+                    </div>   
+                </div>
+                <div class="review__wrap">
+                    <div class="review-avatar">
+                        <img src="image/icon2.png" alt="">
+                    </div>
+                    <div class="review-author">
+                        <div class="review-author__name">Иван Петрович</div>
+                        <div class="review-author__date">05.11.2020</div>
+                        <div class="review-author__text">Потребление, не меняя концепции, изложенной выше, одновременно искажает эксклюзивный целевой трафик, учитывая современные тенденции. Маркетингово-ориентированное издание однообразно искажает стратегический маркетинг. Отсюда естественно следует, что производство порождает конвергентный продукт, оптимизируя бюджеты.</div>
+                    </div>   
+                </div>    
+                <div class="review__wrap">
+                    <div class="review-avatar">
+                        <img src="image/icon3.png" alt="">
+                    </div>
+                    <div class="review-author">
+                        <div class="review-author__name">Иван Петрович</div>
+                        <div class="review-author__date">05.11.2020</div>
+                        <div class="review-author__text">Объемная скидка порождена временем. Ассортиментная политика предприятия, пренебрегая деталями, изоморфна времени. Раскрутка, не меняя концепции, изложенной выше, неестественно стабилизирует тактический рекламный блок.</div>
+                    </div>   
+                </div> 
+                <div class="button-more__btn">
+                    <button class="more__btn">Показать ещё</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script>
+        let inputs = document.querySelectorAll('.input__file');
+        Array.prototype.forEach.call(inputs, function (input) {
+          let label = input.nextElementSibling,
+            labelVal = label.querySelector('.input__file-button-text').innerText;
+      
+          input.addEventListener('change', function (e) {
+            let countFiles = '';
+            if (this.files && this.files.length >= 1)
+              countFiles = this.files.length;
+      
+            if (countFiles)
+              label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+            else
+              label.querySelector('.input__file-button-text').innerText = labelVal;
+          });
+        });
+
+        function handleFileSelect(evt) {
+            var file = evt.target.files; // FileList object
+            var f = file[0];
+            // Only process image files.
+            if (!f.type.match('image.*')) {
+                console.log("Image only please....");
+            }
+            var reader = new FileReader();
+            // Closure to capture the file information.
+            reader.onload = (function(theFile) {
+                return function(e) {
+                    // Render thumbnail.
+                    var span = document.createElement('span');
+                    span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+                    document.getElementById('output').insertBefore(span, null);
+                };
+            })(f);
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(f);
+        }
+        document.getElementById('input__file').addEventListener('change', handleFileSelect, false);
+
+        let text = document.querySelector('.form-review__area');
+
+        text.onfocus = function() {
+            text.classList.remove("error");
+          };
+     
+        window.onsubmit = hit;
+        function hit() {
+            if(text.value.length<250)
+            {
+                text.classList.add('error');
+                return false;
+            }
+        }
+
+        function remove()
+        {   
+            let spans = document.querySelectorAll('.img_avatar span');
+            for (var i = 0; i < spans.length; i++) {
+                spans[i].classList.add("none_d");
+            }
+            document.querySelector('.input__file-button-text').innerText = "Выберите файл";
+            return false;
+        }
+
+    </script>
+
+
+  </body>
+</html>
