@@ -19,7 +19,7 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-f body {
+body {
     margin: 0;
 
     -webkit-tap-highlight-color: transparent;
@@ -162,7 +162,7 @@ button {
 
 body {
     font-family: 'HelveticaNeueCyr';
-    background: #ffffff;
+       background: #F7F7F7;
 }
 
 .container {
