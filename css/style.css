@@ -511,8 +511,13 @@ svg {
     border: none;
     background-size: cover;
     flex-shrink: 0;
+    visibility: hidden;
 }
 
 .none_d{
 	display: none;
+}
+
+.remove.show{
+    visibility: visible;
 }

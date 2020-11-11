@@ -126,6 +126,7 @@
             })(f);
             // Read in the image file as a data URL.
             reader.readAsDataURL(f);
+            document.querySelector('.remove').classList.add('show');
         }
         document.getElementById('input__file').addEventListener('change', handleFileSelect, false);
 
@@ -151,6 +152,7 @@
                 spans[i].classList.add("none_d");
             }
             document.querySelector('.input__file-button-text').innerText = "Выберите файл";
+            document.querySelector('.remove').classList.remove('show');
             return false;
         }
 
